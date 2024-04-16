@@ -316,6 +316,54 @@ header img{
                           0 0 100px var(--main-color);
                           transform:  scale(1.05);
                         }
+
+                           /* subscribe section */
+                           .Subscribe{ 
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            text-align: center;
+                            background: url(https://www.hawaiiliving.com/blog/wp-content/uploads/2019/12/1-Goldcoast-lounge.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 20px;
+                            padding: 6rem 2rem;
+                            margin: 0px 40px;
+                          }
+                          .form-heading{
+                            margin-bottom: 3rem;
+                            color: white;
+                            font-size: 3rem;
+                          }
+                          .Subscribe form{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 3rem;
+                            margin: 5rem auto;
+                            text-align: center;
+                          }
+                          .Subscribe form .input-box{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                          }
+                          .Subscribe form .input-box input,
+                          .Subscribe form textarea{
+                            width: 100%;
+                            padding: 2.5rem;
+                            font-size: 1.8rem;
+                            color: white;
+                            background: #1313138e;
+                            border-radius: 2rem;
+                            border: 2px solid var(--main-color);
+                            margin: 1.5rem 0;
+                            resize: none;
+                          }
+                          .Subscribe form .btn{
+                            margin-top: 2rem; 
+                          }
                         
                          
   
@@ -445,7 +493,16 @@ header img{
                   }
             }
 
-                              /* width 690px */ 
+                 /* width 991px */ 
+              @media (max-width:991px){
+
+                .Subscribe form{
+                   flex-direction: column;
+                   }
+
+            }
+
+                              /* width 870px */ 
               @media (max-width:870px){
 
                 .home{
@@ -477,6 +534,11 @@ header img{
                   #load-more{
                     margin: 19px 39% 15px;
                    }
+
+                   .Subscribe{
+                    width: 85vw;
+                   }
+
                }
 
         
@@ -553,6 +615,10 @@ header img{
                   color: var(--other-color);
                   line-height: 29px;
                   margin-bottom: 50px;
+                 }
+
+                 .Subscribe{
+                  width: 625px;
                  }
         
             } 
